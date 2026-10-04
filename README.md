@@ -2,7 +2,7 @@
 
 A multi-page responsive website about movies and series. Midterm project for the Web Engineering course (HTML, CSS, Bootstrap).
 
-**Live site:** 
+**Live site:** https://erekenoob.github.io/WEB_MID_TERM_YDY/
 
 ## Topic
 
