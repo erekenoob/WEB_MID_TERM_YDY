@@ -14,18 +14,21 @@
 <body>
 
   <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Movie Land</a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" aria-current="page" href="contact.html">Contact</a></li>
+    <nav class="navbar navbar-expand-lg container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">Movie Land</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="series.html">Series</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
         </ul>
+      </div>
       </nav>
-    </div>
   </header>
 
   <main>
