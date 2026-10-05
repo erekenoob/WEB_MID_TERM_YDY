@@ -1,1 +1,238 @@
-Use CSS Grid for card sections on Home page
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0d1015;
+    --surface: #151a21;
+    --field: #1a1f27;
+    --border: #2d323a;
+    --text: #f5f3ee;
+    --muted: #a4a8b0;
+    --accent: #dcc18e;
+    --accent-dark: #171714;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.star {
+    color: var(--accent);
+}
+
+.site-header {
+    background-color: #222;
+    padding: 20px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-color: var(--muted);
+    --bs-navbar-hover-color: var(--text);
+    --bs-navbar-active-color: var(--accent);
+    --bs-navbar-toggler-border-color: var(--border);
+}
+
+.brand {
+    padding: 16px 0;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 22px 16px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--accent);
+}
+
+.hero {
+    padding: 40px 0;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.hero-text {
+    flex: 1 1 0;
+}
+
+.hero-text h1 {
+    margin: 0 0 12px;
+    font-size: 40px;
+}
+
+.hero-img {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 250px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.site-footer {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    color: white;
+    margin-top: 50px;
+    padding: 24px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-brand {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.lead-text {
+    font-size: 18px;
+    color: var(--muted);
+}
+
+.box {
+    padding: 20px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-list .box {
+    flex: 1;
+}
+
+.btn-accent {
+    padding: 10px 20px;
+    border: none;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-accent:hover {
+    background-color: #444;
+}
+
+.contact-list {
+    padding-left: 20px;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--text);
+    --bs-table-border-color: var(--border);
+}
+
+.table caption {
+    color: var(--muted);
+}
+
+.table thead th {
+    color: var(--accent);
+}
+
+.form-control {
+    color: var(--text);
+    background-color: var(--field);
+    border: 1px solid var(--border);
+}
+
+.form-control:focus {
+    color: var(--text);
+    background-color: var(--field);
+    border-color: var(--accent);
+    box-shadow: none;
+}
