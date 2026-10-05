@@ -1,17 +1,30 @@
-# Movie Land
+## Responsive design and Bootstrap
 
-A multi-page responsive website about movies and series. Midterm project for the Web Engineering course (HTML, CSS, Bootstrap).
+- **Bootstrap navbar** on every page; it collapses into a menu button on small screens.
+- **Bootstrap grid** (`row`, `col-*`) for movie cards, series cards, feature boxes and the contact page layout.
+- **Bootstrap utilities and components:** `container`, `g-4`, `h-100`, `mb-3`, `d-flex`, `flex-column`, `min-vh-100`, `btn`, `card`, `table`, `form-control`.
+- **Flexbox:** hero section, footer and sticky footer layout.
+- **CSS Grid:** `.card-grid` on the Home page (5 columns).
+- **Media queries:** tablet (`max-width: 991.98px`) and mobile (`max-width: 575.98px`).
 
-**Live site:** https://erekenoob.github.io/WEB_MID_TERM_YDY/
+## Project structure
 
-## Topic
+```
+movie-land/
+├── index.html
+├── movies.html
+├── series.html
+├── about.html
+├── contact.html
+├── README.md
+├── css/
+│   └── style.css
+└── images/
+```
 
-Movie Land is a small catalog where visitors can see trending movies and popular series, read basic details about them and send a message with a title suggestion. The design is based on our Figma wireframes.
+The `images/` folder contains the exported Figma images: `hero.png`, `dune.png`, `oppenheimer.png`, `the-batman.png`, `spider-man.png`, `interstellar.png`, `the-last-of-us.png`, `stranger-things.png`, `breaking-bad.png`, `the-witcher.png`, `wednesday.png`.
 
-## Team
+## Notes
 
-| Member | Part of the project |
-|---|---|
-| YERTORE | Home, Movies and Series pages (HTML), base styles |
-| DANA | About and Contact pages (HTML), styles for header, footer, cards, table and form |
-| YERASSYL | Bootstrap, Flexbox, CSS Grid and media queries |
+- Ratings on the cards are sample values.
+- The contact form has no server part (it is a front-end project).
